@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/compare_header_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WORK and WALK"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@color/sunshine_light_blue"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="32dp"
+        />
+    <fragment
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+        android:id="@+id/youtube_play_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/compare_word1_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/test_watch_video"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+           />
+        <Button
+            android:id="@+id/compare_word2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/test_watch_video"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+           />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/test_compare_Btn"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00cd00"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:text="TEST COMPARE"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
